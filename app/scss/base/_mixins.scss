@@ -14,3 +14,24 @@
     filter: brightness(0.9);
   }
 }
+@mixin suptitle {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 11px;
+  background: #000000;
+  color: #fff;
+  width: 115px;
+  height: 27px;
+  text-transform: uppercase;
+  padding-top: 8px;
+}
+@mixin title {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+}
