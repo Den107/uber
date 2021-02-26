@@ -19,6 +19,10 @@ body {
 .title {
   @include title;
 }
+.subtitle {
+  @include subtitle;
+}
 
 @import "blocks/header";
 @import "blocks/advantages";
+@import "blocks/mobile";

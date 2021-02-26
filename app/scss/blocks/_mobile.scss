@@ -1,0 +1,74 @@
+.mobile {
+  margin-top: 100px;
+
+  &__wrapper {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    grid-template-rows: repeat(2, 280px);
+    column-gap: 67px;
+    row-gap: 19px;
+  }
+
+  &__wrapper-item {
+    width: 320px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    &--1 {
+      background-image: url("../images/mobile/cart1.jpg");
+    }
+    &--2 {
+      background-image: url("../images/mobile/cart2.jpg");
+    }
+    &--3 {
+      background-image: url("../images/mobile/cart3.jpg");
+    }
+    &--4 {
+      background-image: url("../images/mobile/cart4.jpg");
+    }
+    &--5 {
+      background-image: url("../images/mobile/cart5.jpg");
+    }
+    &--6 {
+      background-image: url("../images/mobile/cart6.jpg");
+    }
+  }
+
+  &__wrapper-item-text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__wrapper-item-plus {
+    position: relative;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    background-color: #000;
+    &::before {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $main_color;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 14px;
+      left: 26%;
+      background-color: $main_color;
+      transform: rotate(90deg);
+    }
+  }
+}
