@@ -1,0 +1,16 @@
+@mixin button {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 14px 25px;
+  background-color: $main_color;
+  color: #fff;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+  background: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  text-transform: uppercase;
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
