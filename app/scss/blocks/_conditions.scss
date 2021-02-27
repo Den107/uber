@@ -1,0 +1,55 @@
+.conditions {
+  margin-top: 66px;
+
+  &__wrapper {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 549px);
+    grid-template-rows: repeat(2, minmax(243px, auto));
+    column-gap: 50px;
+    row-gap: 60px;
+  }
+
+  &__label {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: $main_color;
+    &--red {
+      color: #ff5656;
+    }
+  }
+
+  &__list-item {
+    position: relative;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 29px;
+    color: #222222;
+    padding-left: 50px;
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      left: 17px;
+      top: 5px;
+      width: 21px;
+      height: 20px;
+      background-image: url("../images/icons/conditions/blue.svg");
+    }
+    &--red {
+      &::before {
+        background-image: url("../images/icons/conditions/red.svg");
+      }
+    }
+  }
+
+  &__add {
+    margin-top: 25px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 24px;
+    color: $main_color;
+  }
+}

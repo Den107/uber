@@ -1,0 +1,45 @@
+.world {
+  position: relative;
+  z-index: 1;
+  min-height: 716px;
+  padding-top: 48px;
+  margin-top: 90px;
+  background: #080816;
+  &__suptitle {
+    color: #070716;
+    background-color: #fff;
+  }
+
+  &__title {
+    color: #fff;
+  }
+  &__subtitle {
+    color: #fff;
+  }
+
+  &__img {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  &__more {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 68px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $main_color;
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
