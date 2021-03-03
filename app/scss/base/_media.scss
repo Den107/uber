@@ -7,6 +7,9 @@
       }
     }
   }
+  .footer {
+    margin-top: 68px;
+  }
 }
 @media (max-width: 1200px) {
   .menu {
@@ -45,6 +48,22 @@
     &__wrapper {
       grid-template-columns: repeat(2, 1fr);
       padding: 0 20px;
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .footer {
+    margin-top: 5px;
+    flex-direction: column;
+    &__center {
+      order: -1;
+      margin-bottom: 16px;
+    }
+    &__left {
+      margin-bottom: 25px;
+    }
+    &__right {
+      padding-bottom: 30px;
     }
   }
 }
@@ -159,6 +178,18 @@
   .mobile {
     &__title {
       font-size: 16px;
+    }
+  }
+  .footer {
+    &__center {
+      width: 100%;
+    }
+    &__list2 {
+      &-item {
+        a {
+          font-size: 10px;
+        }
+      }
     }
   }
 }
